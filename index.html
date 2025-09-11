@@ -1,336 +1,236 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>陈如煌（Chen Ruhuang） | 个人主页</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .container {
-      display: flex;
-      max-width: 1000px;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* 左侧边栏样式 */
-    .sidebar {
-      width: 280px;
-      padding: 30px;
-      text-align: center;
-      background-color: #f0f2f5;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-
-    .avatar {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 5px solid #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .name {
-      font-size: 24px;
-      margin: 0 0 10px 0;
-      color: #222;
-    }
-
-    .title {
-      font-size: 16px;
-      color: #555;
-      margin: 0 0 20px 0;
-    }
-
-    .location {
-      font-size: 14px;
-      color: #666;
-      margin: 0 0 20px 0;
-    }
-
-    .contact-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .contact-links li {
-      margin-bottom: 10px;
-    }
-
-    .contact-links a {
-      color: #444;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: color 0.2s;
-    }
-
-    .contact-links a:hover {
-      color: #007bff;
-    }
-
-    .contact-links i {
-      margin-right: 8px;
-    }
-
-    /* 右侧内容样式 */
-    .content {
-      flex: 1;
-      padding: 30px;
-    }
-
-    .top-nav {
-      margin-bottom: 30px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 10px;
-    }
-
-    .top-nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #555;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-
-    .top-nav a:hover {
-      color: #007bff;
-    }
-
-    .bio p,
-    .section-content p {
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    h2 {
-      color: #222;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      font-size: 22px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #f0f2f5;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .timeline-item {
-      margin-bottom: 20px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .timeline-item:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 6px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #007bff;
-    }
-
-    .timeline-item strong {
-      color: #222;
-    }
-
-    .project-title {
-      font-weight: bold;
-      margin-top: 10px;
-      display: block;
-    }
-
-    .highlight {
-      background-color: #f8f9fa;
-      padding: 10px 15px;
-      border-left: 3px solid #007bff;
-      margin: 15px 0;
-    }
-
-    /* 响应式：小屏幕下变为垂直布局 */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .sidebar {
-        width: auto;
-        border-top-right-radius: 8px;
-        border-bottom-left-radius: 0;
-      }
-    }
-  </style>
+  <title>陈如煌（Chen Ruhuang） | Personal Homepage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
   <div class="container">
-    <!-- 左侧边栏：头像、基础信息、联系方式 -->
+    <!-- 左侧边栏 -->
     <aside class="sidebar">
       <div class="avatar-container">
-        <img src="bigyellow2.jpg" alt="陈如煌" class="avatar" />
+        <img src="bigyellow2.jpg" alt="陈如煌" class="avatar"/>
       </div>
       <h1 class="name">陈如煌 / Bigyellow</h1>
-      <p class="title">山东大学 网络安全研究生</p>
+      <p class="title">山东大学 · 网络空间安全学院<br/>硕士研究生（2025-2028）</p>
       <p class="location">青岛, 中国</p>
       <ul class="contact-links">
-        <li>
-          <a href="mailto:202537250@mail.sdu.edu.cn"><i class="fas fa-envelope"></i> 学校邮箱</a>
-        </li>
-        <li>
-          <a href="mailto:big_yellow233@163.com"><i class="fas fa-envelope-open"></i> 个人邮箱</a>
-        </li>
-        <li>
-          <a href="https://github.com/Big-yellowa"><i class="fab fa-github"></i> GitHub</a>
-        </li>
-        <li>
-          <a href="tel:13400878057"><i class="fas fa-phone"></i> 13400878057</a>
-        </li>
-        <li>
-          <a href="weixin://"><i class="fab fa-weixin"></i> 微信同手机号</a>
-        </li>
+        <li><a href="mailto:big_yellow233@163.com"><i class="fas fa-envelope"></i>Email</a></li>
+        <li><a href="https://github.com/Big-yellowa"><i class="fab fa-github"></i>Github</a></li>
+        <li><a href="#"><i class="fas fa-phone"></i> 13400878057</a></li>
       </ul>
-      <div style="margin-top: 20px; font-size: 14px; color: #666;">
-        <p>出生年月：2003.03</p>
-        <p>政治面貌：共青团员</p>
-        <p>英语能力：CET-4</p>
-      </div>
     </aside>
 
-    <!-- 右侧主内容：简介、研究方向、经历等 -->
+    <!-- 右侧主内容 -->
     <main class="content">
       <nav class="top-nav">
-        <a href="#education">教育背景</a>
-        <a href="#internship">实习经历</a>
-        <a href="#research">科研经历</a>
-        <a href="#competitions">竞赛情况</a>
-        <a href="#skills">专业技能</a>
+        <a href="#bio">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
       </nav>
 
-      <section class="bio">
-        <h2>个人简介</h2>
+      <section id="bio" class="bio">
         <p>
-          我是山东大学网络空间安全学院网络与信息安全专业硕士研究生，本科毕业于天津理工大学计算机科学与工程学院信息安全专业。
+          我是山东大学网络空间安全学院网络与信息安全专业硕士研究生（2025-2028），本科毕业于天津理工大学计算机科学与工程学院信息安全专业（2021-2025），本科期间综合成绩排名 <b>4/144</b>，平均加权成绩 <b>91.4</b>，通过 CET-4（522分）。
         </p>
         <p>
-          热爱编程，具备自我驱动力，乐于创新，数理基础扎实。对人工智能、大模型及神经网络领域有较强的研究热情，具备扎实的理论基础及丰富的项目经验。善于学习和总结，拥有较强的团队协作能力及自主研究能力，乐于面对挑战和解决复杂问题。
+          我拥有较强的编程与科研能力，熟悉 <b>C、Python</b> 等编程语言，具备丰富的大模型（BERT、GPT、ChatGLM 等）应用经验，能够进行模型训练、调优与部署。研究方向涵盖 <b>大模型应用、智能合约安全、AI驱动的安全分析</b> 等领域。
         </p>
       </section>
 
-      <section id="education" class="section-content">
-        <h2>教育背景</h2>
+      <section id="research" class="research-interests">
+        <h2>Research Interests</h2>
+        <p>大模型与人工智能安全、智能合约漏洞检测、AI驱动的自动化系统、隐私与网络安全。</p>
+      </section>
+
+      <section id="experience" class="experiences-education">
+        <h2>Education</h2>
         <ul>
-          <li class="timeline-item">
-            <strong>[2025.09 – 2028.06]</strong> 山东大学 | 网络空间安全学院 | 网络与信息安全 | 硕士研究生
-          </li>
-          <li class="timeline-item">
-            <strong>[2021.09 – 2025.06]</strong> 天津理工大学 | 计算机科学与工程学院 | 信息安全 | 本科<br>
-            平均加权成绩：91.4 | 综合排名：4/144
+          <li><strong>2025.09–2028.06</strong> 硕士研究生，网络空间安全学院，山东大学</li>
+          <li><strong>2021.09–2025.06</strong> 本科，信息安全，天津理工大学</li>
+        </ul>
+
+        <h2>Internship</h2>
+        <ul>
+          <li>
+            <strong>2024.10–2025.08</strong> 大模型应用工程师（实习），字节跳动（北京）<br/>
+            主导 <b>PE 技术支持体系搭建</b> 与 <b>Workflow 全链路优化</b>，提升效率 30%；<br/>
+            参与 <b>安全审核平台智能体架构</b>、<b>AutoAgent 平台</b> 与 <b>多智能体系统</b> 搭建，应用于智能合约检测与数据标注等场景；<br/>
+            负责 <b>搜索相关性打分优化</b>、<b>flow安全机审项目</b> 模型改进，推动多项核心指标显著提升。
           </li>
         </ul>
       </section>
 
-      <section id="internship" class="section-content">
-        <h2>实习经历</h2>
+      <section id="publications" class="publications">
+        <h2>Publications & Research</h2>
         <ul>
-          <li class="timeline-item">
-            <strong>[2024.10 – 2025.08]</strong> 字节跳动(北京) | 大模型应用工程师
-            <p>协同PM、算法等负责toB大模型产品的设计开发和工程支持，主导多项技术优化项目，获Spot Bonus奖励。</p>
-            
-            <span class="project-title">安全审核平台智能体架构搭建（已上线）</span>
-            <p>基于字节云MCP框架，采用LangChain架构构建MCP+Agent系统，整合工作流、SFT模型、插件、Search及Playwright等工具，实现文本违规检测、图像风险识别等多场景内容自动化审核。</p>
-            
-            <span class="project-title">AutoAgent平台研发（已上线）</span>
-            <p>创新设计"Planner（任务规划）-Coder（代码执行）-Reporter（结果输出）"多Agent协同架构，基于stagehand、browser-use工具及LangChain框架完成平台开发，应用于大模型自动标注场景，降低标注人力成本。</p>
-            
-            <span class="project-title">内部aipass平台多智能体构建</span>
-            <p>针对风险标签识别业务场景，设计"自定义Agent（智能决策主体）+ 平台原生MCP + 定制化Memory"的一体化智能体方案，依托A2A框架完成风险标签识别全流程的重构与搭建。</p>
-            
-            <span class="project-title">搜索相关性打分优化项目</span>
-            <p>构建包含"思维链（CoT）"的高质量训练数据集，通过模型微调（SFT）优化模型推理逻辑，实现核心指标R@P80从55.2提升至62.4（+7.2pp）。</p>
+          <li>
+            <b>国家级大创项目</b> “基于多策略神经网络的智能合约安全审计系统”，负责人（2022–2023）  
+            <br/>提出将 GPT 模型引入漏洞检测流程，提升检测准确率和系统可扩展性，相关成果申请发明专利。
+          </li>
+          <li>
+            <b>CCF-C会议论文</b> 《A High-Performance Smart Contract Vulnerability Detection Scheme Based on BERT》，第二作者（2023）  
+            <br/>提出基于 BERT 的高性能检测方案，可重入漏洞检测准确率达 98.18%。
+          </li>
+          <li>
+            <b>发明专利</b> 《一种基于GPT模型的智能合约漏洞检测系统构建方法》，第一作者（已公开，2023）。
           </li>
         </ul>
       </section>
 
-      <section id="research" class="section-content">
-        <h2>科研经历</h2>
+      <section id="awards" class="awards">
+        <h2>Awards & Competitions</h2>
         <ul>
-          <li class="timeline-item">
-            <strong>国家级大创项目 | 项目负责人 | [2022.06 – 2023.12]</strong>
-            <p class="project-title">基于多策略神经网络的智能合约安全审计系统</p>
-            <p>针对提高智能合约漏洞检测的准确率，采用神经网络技术，设计高效准确的智能合约安全漏洞检测方案。将基于GPT模型的系统架构引入漏洞检测流程，提升了检测准确率和系统可扩展性，相关成果已申请发明专利。</p>
-          </li>
-          
-          <li class="timeline-item">
-            <strong>CCF-C会议论文 | 第二作者 | [2023.02 – 2023.10]</strong>
-            <p class="project-title">《A High-Performance Smart Contract Vulnerability Detection Scheme Based on BERT》</p>
-            <p>发表于"International Conference on Parallel and Distributed Systems"。提出基于BERT模型的高性能智能合约漏洞检测方案，采用迁移学习方法解决标记样本较少问题，特别在可重入漏洞检测中达到98.18%的准确率。</p>
-          </li>
-          
-          <li class="timeline-item">
-            <strong>发明专利 | 学生一作 | [2023.05]</strong>
-            <p class="project-title">《一种基于GPT模型的智能合约漏洞检测系统构建方法》(已公开)</p>
-          </li>
+          <li>第十六届全国大学生信息安全竞赛 国家级二等奖（2023）</li>
+          <li>第十七届全国大学生信息安全竞赛 国家级二等奖（2024）</li>
+          <li>天津市大学生信息安全网络攻防大赛 省级三等奖（2023）</li>
+          <li>蓝桥杯全国软件和信息技术专业人才大赛 省级二等奖（2023）</li>
         </ul>
-      </section>
-
-      <section id="competitions" class="section-content">
-        <h2>竞赛情况</h2>
-        <ul>
-          <li class="timeline-item">
-            <strong>[2024.08]</strong> 第十七届全国大学生信息安全竞赛（作品赛） | 国家级二等奖 | 技术核心成员
-            <p>项目名称："国产大模型驱动的智能合约生成、检测及修复一体化平台"</p>
-          </li>
-          <li class="timeline-item">
-            <strong>[2023.08]</strong> 第十六届全国大学生信息安全竞赛（作品赛） | 国家级二等奖 | 队长
-            <p>项目名称："基于AI大模型的高性能智能合约漏洞检测系统"</p>
-          </li>
-          <li class="timeline-item">
-            <strong>[2023.09]</strong> 天津市大学生信息安全网络攻防大赛 | 省级三等奖
-          </li>
-          <li class="timeline-item">
-            <strong>[2023.04]</strong> 蓝桥杯全国软件和信息技术专业人才大赛 | 省级二等奖
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills" class="section-content">
-        <h2>专业技能</h2>
-        <div class="highlight">
-          <p><strong>编程语言：</strong>掌握C语言、Python等多种编程语言</p>
-          <p><strong>工具技能：</strong>熟悉visio作图，具备大模型（如BERT、GPT）应用经验</p>
-          <p><strong>模型能力：</strong>能够针对具体任务进行模型的训练、调优及部署</p>
-          <p><strong>框架经验：</strong>熟悉LangChain、MCP框架等大模型应用开发工具</p>
-        </div>
       </section>
     </main>
   </div>
 </body>
 </html>
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 左侧边栏 */
+.sidebar {
+  width: 280px;
+  padding: 30px;
+  text-align: center;
+  background-color: #f0f2f5;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #222;
+}
+
+.title {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links li {
+  margin-bottom: 12px;
+}
+
+.contact-links a {
+  color: #444;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: #007bff;
+}
+
+.contact-links i {
+  margin-right: 8px;
+}
+
+/* 右侧内容 */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.top-nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.top-nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: #007bff;
+}
+
+h2 {
+  color: #222;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: auto;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
+</style>
