@@ -98,3 +98,160 @@
   </div>
 </body>
 </html>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 左侧边栏样式 */
+.sidebar {
+  width: 280px;
+  padding: 30px;
+  text-align: center;
+  background-color: #f0f2f5;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #222;
+}
+
+.title {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.location {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+}
+
+.contact-links a {
+  color: #444;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: #007bff;
+}
+
+.contact-links i {
+  margin-right: 8px;
+}
+
+/* 右侧内容样式 */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.top-nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.top-nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: #007bff;
+}
+
+.bio p,
+.research-interests p,
+.experiences-education p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.bio a,
+.research-interests a,
+.experiences-education a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.bio a:hover,
+.research-interests a:hover,
+.experiences-education a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #222;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.experiences-education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experiences-education li {
+  margin-bottom: 10px;
+}
+
+/* 响应式：小屏幕下变为垂直布局 */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
+</style>
